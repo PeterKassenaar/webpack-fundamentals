@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webpack basics</title>
+</head>
+<body>
+<div class="container">
+    <h1>30 - Webpack using loaders</h1>
+    <p>We have an `index.css` stylesheet with some rules.</p>
+    <p>
+        See the `webpack.config.js` file for a demonstration of the loader for css styles.
+    </p>
+    <p>
+        Don't forget to `npm install` the needed loaders first!
+    </p>
+    <p>More options can be found at
+        <a href="https://webpack.js.org/concepts/loaders/">
+            https://webpack.js.org/concepts/loaders/
+        </a>
+    </p>
+    <!--The list is filled via JavaScript-->
+    <h2>List with numbers:</h2>
+    <ul id="listOutput"></ul>
+</div>
+<!--JavaScript in external file, bundled via Webpack-->
+<script src="dist/bundle.js"></script>
+</body>
+</html>

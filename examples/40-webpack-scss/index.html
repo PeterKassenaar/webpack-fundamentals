@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webpack basics</title>
+</head>
+<body>
+<div class="container">
+    <h1>40 - Webpack using SCSS</h1>
+    <p>We have a general `theme.scss` with some basic variables.</p>
+    <p>We have an `index.scss` that imports the theme.scess.</p>
+    <p>Also installed are `node-sass` and `sass-loader`.</p>
+    <p>
+        See the `webpack.config.js` file for a demonstration of chaining of sass-loader with the rest.
+    </p>
+    <p>
+        Don't forget to `npm install` the needed loaders first!
+    </p>
+    <p>More options can be found at
+        <a href="https://webpack.js.org/concepts/loaders/">
+            https://webpack.js.org/concepts/loaders/
+        </a>
+    </p>
+    <div class="success">
+        <h3>This is a div with a success alert</h3>
+    </div>
+    <div class="error">
+        <h3>This is a div with an error alert</h3>
+    </div>
+    <!--The list is filled via JavaScript-->
+    <h2>List with numbers:</h2>
+    <ul id="listOutput"></ul>
+</div>
+<!--JavaScript in external file, bundled via Webpack-->
+<script src="dist/bundle.js"></script>
+</body>
+</html>

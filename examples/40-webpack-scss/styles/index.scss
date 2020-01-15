@@ -1,0 +1,26 @@
+/*index.scss - some basic styles for the homepage.
+    These are now also imported from another .scss file and
+    handled by sass-loader in webpack.config.js.
+*/
+@import "theme";
+$theme-font: verdana sans-serif;
+body{
+    font-family: $theme-font;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid red;
+    padding: 10px;
+    background-color: $theme-light;
+}
+h1 {
+    background-color:#99cc00;
+    padding:10px;
+}
+div.success{
+    background-color: $theme-success;
+}
+div.error{
+    background-color: $theme-error;
+}

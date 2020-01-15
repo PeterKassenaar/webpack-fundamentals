@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webpack basics</title>
+    <link rel="stylesheet" href="dist/bundle.css">
+</head>
+<body>
+<div class="container">
+    <h1>50 - Webpack using a plugin</h1>
+    <p>We now extract the compiled .scss to its own .css file in the /dist folder</p>
+    <p>We do need a link in the header of the document</p>
+    <p>we used mini-css-webpack-plugin for this</p>
+    <p>
+        See the `webpack.config.js` file for a demonstration of using and configuring the plugin.
+    </p>
+    <p>
+        Don't forget to `npm install` the needed loaders first!
+    </p>
+    <p>More options can be found at
+        <a href="https://webpack.js.org/plugins/mini-css-extract-plugin/">
+            https://webpack.js.org/plugins/mini-css-extract-plugin/
+        </a>
+    </p>
+    <div class="success">
+        <h3>This is a div with a success alert</h3>
+    </div>
+    <div class="error">
+        <h3>This is a div with an error alert</h3>
+    </div>
+    <!--The list is filled via JavaScript-->
+    <h2>List with numbers:</h2>
+    <ul id="listOutput"></ul>
+</div>
+<!--JavaScript in external file, bundled via Webpack-->
+<script src="dist/bundle.js"></script>
+</body>
+</html>

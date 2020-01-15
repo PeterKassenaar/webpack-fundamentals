@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webpack basics</title>
+</head>
+<body>
+<h1>Webpack basics</h1>
+<!--Steps-->
+<ol>
+    <li>Install webpack globally: `npm install -g webpack webpack-cli`</li>
+    <li>Run `npm install` in this directory to install dependencies (i.e. http-server)</li>
+    <li>run `npm start` to start the webserver</li>
+    <li>visit http://localhost:8080</li>
+    <li>run `webpack` to generate a defaul bundle.js. It is saved in /dist.</li>
+    <li>reload the webpage. It should show a list with numbers 1-10</li>
+    <li>Look at - and update - index.js to change the code</li>
+    <li>don't forget to re-run `webpack`!</li>
+</ol>
+<!--The list is filled via JavaScript-->
+<h2>List with numbers:</h2>
+<ul id="listOutput"></ul>
+<!--JavaScript in external file, bundled via Webpack-->
+<script src="dist/bundle.js"></script>
+</body>
+</html>

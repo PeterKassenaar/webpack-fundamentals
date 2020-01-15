@@ -1,0 +1,16 @@
+/*index.css - some basic styles for the home page.
+    These get included in the final bundle
+*/
+body{
+    font-family: Verdana sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid red;
+    padding: 10px;
+}
+h1 {
+    background-color:#99cc00;
+    padding:10px;
+}
